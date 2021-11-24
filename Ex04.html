@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+    <title>Exercicio 04</title>
+</head>
+<body>
+    <div>
+        <!--Escreva código com JSX, diretamente em uma página HTML, para calcular a média 
+        ponderada de três notas.-->
+            
+        <div id="root"></div>
+        <script>
+            function media() {
+                var N1 =+ prompt(" Nota 1: ");
+                var P1 =+ prompt("Peso nota 1: ");
+
+                var N2 =+ prompt(" Nota 2: ");
+                var P2 =+ prompt(" Peso nota 2: ");
+
+                var N3 =+ prompt(" Nota 3: ");
+                var P3 =+ prompt(" Peso nota 3: ");
+
+                var result = (((N1 * P1) + (N2 * P2) + (N3 * P3)) / (P1 + P2 + P3));
+                document.write('Resultado Media ponderada: ' + result);
+
+            }
+            ReactDOM.render(media(), document.getElementById('root'));
+        </script>
+    </div>
+</body>
+</html>

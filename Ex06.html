@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Exercicio 06</title>
+</head>
+
+<body>
+    
+    <!--Escreva código com JSX, diretamente em uma página HTML, para calcular a soma dos
+    quadrados de três números inteiros.-->
+    
+    <div id="root"></div>
+    <script>
+
+        function quadrado() {
+
+            var N1 =+ prompt(" Primeiro numero :");
+            var N2 =+ prompt(" Segundo numero :");
+            var N3 =+ prompt(" Terceiro numero :");
+
+            var soma = Math.pow(N1, 2) + Math.pow(N2, 2) + Math.pow(N3, 2);
+
+            document.write(' Resultado da soma: ' + soma);
+        }
+        ReactDOM.render(quadrado(), document.getElementById("root"));
+
+    </script>
+
+</body>
+
+</html>
